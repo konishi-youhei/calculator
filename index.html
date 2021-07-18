@@ -1,0 +1,83 @@
+<!DOCTYPE HTML>
+<html lang="ja">
+<head>
+    <meta charset="utf-8">
+    <title>シンプルな電卓</title>
+    <link href="style.css" rel="stylesheet">
+    <style>
+        /* ここにCSSを書いていきます。 */
+    </style>
+</head>
+<body>
+<div class="container">
+  <h1>電卓機能</h1>
+  <table border="1" cellspacing="0">
+      <tr>
+          <td colspan="4" id="result">0</td>
+      </tr>
+      <tr>
+          <td><button class="gray ac_button" onclick="reset();">AC</button></td>
+          <td><button class="gray c_button" onclick="back();">back</button></td>
+          <td><button class="gray tax" onclick="calcTax();">税込</button></td>
+          <td><button class="orange" onclick="pushOpe(this);">/</button></td>
+      </tr>
+      <tr>
+          <td><button onclick="pushNum(this);">7</button></td>
+          <td><button onclick="pushNum(this);">8</button></td>
+          <td><button onclick="pushNum(this);">9</button></td>
+          <td><button class="orange" onclick="pushOpe(this);">*</button></td>
+      </tr>
+      <tr>
+          <td><button onclick="pushNum(this);">4</button></td>
+          <td><button onclick="pushNum(this);">5</button></td>
+          <td><button onclick="pushNum(this);">6</button></td>
+          <td><button class="orange" onclick="pushOpe(this);">-</button></td>
+      </tr>
+      <tr>
+          <td><button onclick="pushNum(this);">1</button></td>
+          <td><button onclick="pushNum(this);">2</button></td>
+          <td><button onclick="pushNum(this);">3</button></td>
+          <td><button class="orange" onclick="pushOpe(this);">+</button></td>
+      </tr>
+      <tr>
+          <td colspan="3"><button onclick="pushNum(this);">0</button></td>
+          <td><button class="orange" onclick="calc();">=</button></td>
+      </tr>
+  </table>
+</div>
+<div class="url">
+  <p>参考URL</p>
+  <p><a href="https://techacademy.jp/magazine/21139">https://techacademy.jp/magazine/21139</a></p>
+  <p><a href="http://www.shurey.com/js/craft/calc/index.html">http://www.shurey.com/js/craft/calc/index.html</a></p>
+  <p><a href="https://codeforfun.jp/javascript-how-to-create-a-simple-calculator/">https://codeforfun.jp/javascript-how-to-create-a-simple-calculator/</a></p>
+  <p>追加機能：税込ボタンを追加し、ボタンを押すと入力された値の税込表示になります。</p>
+</div>
+<script src="main.js"></script>
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
